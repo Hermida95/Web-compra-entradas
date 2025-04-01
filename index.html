@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/formulario.js" defer></script>
+
+    <title>Conciertos Arctic Monkeys</title>
+</head>
+<body>
+    <header>
+        <h1> Arctic Monkeys</h1>
+        <img src="img/grupo.jpg" alt="Cartelera con 'Sold Out' de los Arctic Monkeys">
+    </header>
+    <div>
+    <p>
+        <h2>Sobre los Arctic Monkeys</h2>
+        Los Arctic Monkeys son una banda británica de rock formada en Sheffield 
+        en 2002. Conocidos por su estilo único que fusiona el indie rock, garage 
+        rock y post-punk revival, han conquistado al público con su sonido innovador
+         y sus letras agudas. Su álbum debut Whatever People Say I Am, That's What I'm 
+         Not (2006) los catapultó a la fama, convirtiéndolos en una de las bandas más 
+         influyentes de la escena musical contemporánea.
+    </p>
+    </div>
+
+    <h2>Fechas de los Conciertos</h2>
+    <table>
+        <tr>
+            <th>Ciudad</th>
+            <th>Fecha</th>
+            <th>Precio</th>
+        </tr>
+        <tr id="madrid">
+            <td>Madrid</td>
+            <td>25/06/2025</td>
+            <td>45€</td>
+        </tr>
+        <tr id="barcelona">
+            <td>Barcelona</td>
+            <td>27/06/2025</td>
+            <td>50€</td>
+        </tr>
+        <tr id="lisboa">
+            <td>Lisboa</td>
+            <td>30/06/2025</td>
+            <td>55€</td>
+        </tr>
+    </table>
+
+    <form action="confirmacion.html" method="get">
+        <fieldset id="datos">
+            <legend>Datos personales</legend>
+            <label for="nombreyapellidos">Nombre y apellidos</label>
+            <input type="text" name="nombreyapellidos" id="nombreyapellidos">
+        </fieldset>
+        <br>
+        <fieldset id="entradas">
+            <legend>Selección de entradas</legend>
+            <label for="fecha">Fecha:</label><input type="date" name="fecha" id="fecha">
+            <label for="ciudad">Ciudad:</label>
+            <select id="ciudad" name="ciudad">
+                <option value="Madrid">Madrid</option>
+                <option value="Barcelona">Barcelona</option>
+                <option value="Lisboa">Lisboa</option>
+            </select>
+            <label for="entradas">Entradas:</label>
+            <select id="entradas" name="entradas">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                
+            </select>
+            <label for="categoria">Categoria:</label>
+            <select id="categoria" name="categoria">
+                <option value="fondo">Fondo</option>
+                <option value="lateral izquierdo">Lateral izquierdo</option>
+                <option value="lateral derecho">Lateral derecho</option>
+                <option value="foso">Foso</option>
+            </select>
+               
+         </fieldset>
+         <br>
+         
+
+        <!--Fieldset con input tipo radio para seleccionar métodos de pago-->
+        
+        <fieldset id="pago">
+            <legend>Método de pago</legend>
+            <label for="tarjeta"><input type="radio" name="pago" value="tarjeta"> Tarjeta</label>
+            <img src="img/master.png">
+            <label for="PayPal"><input type="radio" name="pago" value="PayPal"> PayPal</label>
+            <img src="img/paypal.png">
+            <label for="bizum"><input type="radio" name="pago" value="bizum"> Bizum</label>
+            <img src="img/bizum.jpg">
+        </fieldset>
+        <br>
+
+        <!--Fieldset con input tipo checkbox paara aceptar términos-->
+        <fieldset id="terminos">
+            <label for="terminos"><input type="checkbox" name="terminos" value="aceptar" required>Aceptar los términos y condiciones</label>
+         </fieldset>
+         <br>
+
+          <!--Botón de confirmacion azul con texto blanco que cambia de color y envia datos
+        a la página de confirmación mediante JavaScropt-->
+        
+        <input type="submit" Value="Comprar" id="boton"> 
+         
+       
+         </form>
+         
+</body>
+</html>

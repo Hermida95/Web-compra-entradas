@@ -1,0 +1,141 @@
+/*Definimos la tipografía y margenes para todo el body*/
+body {
+    font-family: "Calibri", sans-serif, system-ui;
+    margin-left: 300px;
+    margin-right: 300px;
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+
+/*Definimos la tipografía para los encabezados (las excepciones)*/
+h1, h2 {
+    font-family: Verdana,sans-serif;
+}
+
+/*Estilo del header*/
+header{
+    text-align: center;
+}
+header img {
+    margin:1px;
+    border-radius: 10px;
+    width:400px;
+    height:200px;
+
+}
+div {
+    border:2px solid black;
+    border-radius: 5px;
+    background-color: white;
+    display: block;
+    padding:10px;
+    width: 800px;
+    margin:auto;
+    margin-bottom: 40px;
+    
+}
+
+/*Estilos de la tabla*/
+table {
+
+    border:3px solid;
+    border-collapse: collapse;
+    border-radius: 10px;
+    margin:20px auto;
+    width:800px;
+    font-size: large;
+    text-align: center;
+    }
+
+table th {
+    border: 3px;
+    border-radius: 10px;
+    background-color:rgb(255, 255, 0);
+}
+ #madrid {
+    background-color: lightgray;
+    border: 3px solid black;
+}
+#barcelona{
+    background-color: rgb(238, 238, 137);
+    border: 3px solid black;
+}
+#lisboa{
+    background-color: lightgray;
+    border: 3px solid black;
+}
+
+/*Estilos del formulario*/
+
+form {
+    border: 2px solid black;   
+    border-radius: 10px;       
+    padding: 30px;             
+    background-color: white; 
+    width: 700px;              
+    margin: auto;
+    margin-top: 40px;        
+}
+/*Estilos de cada fieldset*/
+#datos {
+    border:1px solid black;
+    border-radius: 5px;
+    text-align: left;
+
+    legend {
+        font-size: large;
+        font-weight: bold;
+        text-align: left;
+    }
+    
+}
+
+#entradas{
+    border:1px solid black;
+    border-radius: 5px;
+    
+legend {
+    font-size: large;
+    font-weight: bold;
+    text-align: left;
+}
+}
+#pago {
+    border:1px solid black;
+    border-radius: 5px;
+    width: auto;
+    
+    legend {
+        font-size: large;
+        font-weight: bold;
+        text-align: left;
+    }
+}
+#pago img {
+    width: 30px;
+    height: 15px;
+    padding-right: 20px;
+    margin-right: 30px;
+}
+
+
+#terminos {
+    border:1px solid black;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+#boton {
+    width: 300px;
+    height: 50px;
+    background-color:lightskyblue;
+    font-size: x-large;
+    font-weight: bold;
+    border:2px solid black;
+    border-radius: 5px;
+    color: white;
+}
+#boton:hover {
+    background-color:rgb(93, 151, 222);
+}
+    
